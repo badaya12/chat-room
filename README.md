@@ -34,17 +34,15 @@ To get started with Chat Room, follow these steps:
 
 To run the Chat Room application, follow these steps:
 
-1. Clone the repository:
-```git clone https://github.com/badaya12/code_room.git```
 
 
-2. Navigate to the project directory:
+1. Navigate to the project directory:
 ```cd code_room```
 
-3. Set up the Django environment and migrate the database:
+2. Set up the Django environment and migrate the database:
 ```python manage.py migrate```
 
-4. Start the development server:
+3. Start the development server:
 ```python manage.py runserver```
 
-5. Access the application in your web browser at [http://localhost:8000](http://localhost:8000).
+4. Access the application in your web browser at [http://localhost:8000](http://localhost:8000).
