@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Rooms | {% endblock %}
+
+{% block content %}
+<div class="p-10 lg:p-20 text-center">
+    <h1 class="text-3xl lg:text-6xl text-white">Rooms</h1>
+</div>
+
+
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mt-6">
+        <!-- Add margin around each card -->
+        {% for room in rooms %}
+        <div class="w-full max-w-sm mx-auto bg-stone-800 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex justify-end px-4 pt-4">
+            </div>
+            <div class="flex flex-col items-center pb-10">
+                <img class="w-24 h-24 mb-3 rounded-lg  shadow-lg" src="{{ room.image.url }}" alt="{{ room.name }} image"/>
+                <h5 class="mb-1 text-xl font-medium text-white dark:text-white">{{ room.name }}</h5>
+                <div class="flex mt-4 md:mt-6">
+                    <a href="{% url 'room' room.slug %}" class="inline-flex items-center px-4 py-2 text-lg font-medium text-center text-white bg-stone-500 rounded-lg hover:bg-stone-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Join</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
