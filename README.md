@@ -35,7 +35,7 @@ To get started with Chat Room, follow these steps:
 To run the Chat Room application, follow these steps:
 
 1. Clone the repository:
-```git clone https://github.com/MeMadDev/code_room.git```
+```git clone https://github.com/badaya12/code_room.git```
 
 
 2. Navigate to the project directory:
